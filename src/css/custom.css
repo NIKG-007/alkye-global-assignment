@@ -1,0 +1,416 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.App {
+    text-align: center;
+}
+
+
+/* header css */
+
+.App {
+    text-align: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* semi-transparent background */
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.hero {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.headline {
+    position: absolute;
+    bottom: 100px;
+    left: 80px;
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+}
+
+.headline p {
+    margin: 0;
+}
+
+.headline h1 {
+    margin: 10px 0;
+    font-size: 64px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        display: none;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle.active+nav ul {
+    display: flex;
+}
+
+
+/*  main section */
+
+.main-section {
+    padding: 20px;
+}
+
+.main-section .content {
+    text-align: left;
+}
+
+.main-section .images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.main-section .images img {
+    max-width: 45%;
+    height: auto;
+}
+
+.profile-section {
+    background-color: #112C41;
+    padding: 20px 50px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-item {
+    flex: 1;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.profile-item h5 {
+    font-size: 24px;
+    color: #6B6B6B;
+    text-align: left;
+}
+
+.profile-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-inner span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.profile-inner img {
+    width: 30px;
+}
+
+.bottom-arrow {
+    display: flex;
+}
+
+.bottom-arrow img {
+    width: 20px;
+}
+
+/* middle section */
+
+.stay-connected {
+    text-align: left;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stay-connected h1 {
+    font-size: 64px;
+}
+
+.stay-connected h1 span {
+    color: #F36F2B;
+}
+
+.business-updates,
+.industry-events {
+    margin-bottom: 20px;
+}
+
+.industry-events {
+    display: flex;
+    align-items: center;
+}
+
+.industry-events img {
+    padding: 0px 20px 0px 0px;
+}
+
+.industry-events h2 {
+    font-size: 24px;
+}
+
+.icon {
+    font-size: 2em;
+}
+
+.business-updates p {
+    font-size: 1em;
+    line-height: 1.6;
+    padding: 0px 0px 0px 65px;
+}
+
+.image-section img {
+    max-width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .stay-connected {
+        padding: 10px;
+    }
+}
+
+/* diversity-section */
+
+.diversity-inclusion {
+    background-color: #0c2d48;
+    color: white;
+    padding: 60px 0px 0px 0px;
+}
+
+.diversity-inclusion h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.diversity-inclusion h1 span {
+    color: #F36F2B;
+}
+
+.diversity-inclusion p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.diversity-inclusion h2 {
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.diversity-inclusion .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .diversity-inclusion h1 {
+        font-size: 2em;
+    }
+
+    .diversity-inclusion p {
+        font-size: 1em;
+    }
+
+    .diversity-inclusion h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+/* success section */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header,
+.celebration-section,
+.appreciation-program,
+.footer {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.header h1,
+.appreciation-program h2 {
+    color: #ff6600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header p,
+.celebration-section p,
+.appreciation-program p {
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.image-grid img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.image-large {
+    width: 32%;
+    height: auto;
+}
+
+.image-small {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .image-large {
+        width: 100%;
+    }
+
+    .header,
+    .celebration-section,
+    .appreciation-program,
+    .footer {
+        padding: 10px;
+    }
+}
+
+
+/* footer css */
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* media query */
+
+@media only screen and (max-width: 600px) {
+    .navbar ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .main-section .images {
+        flex-direction: column;
+    }
+
+    .main-section .images img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Medium devices (tablets, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .main-section .images img {
+        max-width: 45%;
+    }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .main-section .images img {
+        max-width: 45%;
+    }
+}
